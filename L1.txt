@@ -1,0 +1,18 @@
+.data
+    array:
+    nr:     .word 4
+    rezultat:.word 0x10010030
+.text
+    .global main
+    main:
+    lw $t0,nr
+    la $t1,array
+    lw $t2,nr
+    xor$ t3,$t3,$t3 
+for:
+    lw $t4,($t2)
+    add $t3,$t4,$t3
+    addi $t1,$t1,4
+    bgtz $t2,for
+    sw $t3,rezultat
+    done
