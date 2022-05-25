@@ -1,0 +1,4 @@
+Să se rezolve in limbaj de asamblare MIPS:
+8. Se citeste un sir de n numere naturale de la tastatură (se va face testul de pozitivitate), unde n
+este citit si el de la tastatură. Determinati cel mai mare divizor comun si cel mai mic multiplu
+comun al numerelor.
